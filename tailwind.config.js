@@ -10,6 +10,15 @@ module.exports = {
       '1xs':'0.75rem',
     },
 
+    colors:
+    {
+      'blue':'#5A639C',
+      'pink':'#FF8C9E',
+      'brown':'#BC9F8B',
+      'green':'#597445'
+
+    }
+
   },
   plugins: [],
 }

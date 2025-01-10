@@ -2,10 +2,10 @@ import React, { useRef, useState } from 'react';
 import { Modal, Button, Checkbox } from 'antd';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
-import moment from 'moment';
+// import moment from 'moment';
 import ippc from '../assets/logo.png'
 import header from '../assets/Header.png'
-import signature from '../assets/signature.png'
+import signature from '../assets/signature1.png'
 
 
 const temperatures = [];
@@ -117,13 +117,10 @@ const FormLayout = () => {
                 <td className="p-2 text-left">
                   <p className="font-bold text-sm">Dte PPQS Registration No. 1033/MB DT: 05-07-2024</p>
                   <p className="text-sm">
-                    Treatment Certificate No. <b className="text-lg">TNF <input className='border-2 rounded-md border-black w-[6%] h-[6%]' 
+                    Treatment Certificate No. <b className="text-lg">TF <input className='border-2 rounded-md border-black w-[6%] h-[6%]' 
                     type="text"
                     name="tnfnumber"
-                    onChange={handleInputChange}></input> / <input className='border-2 rounded-md border-black w-[6%] h-[6%]' 
-                    type="text"
-                    name="year"
-                    onChange={handleInputChange}/></b>
+                    onChange={handleInputChange}></input> </b>
                   </p>
                   <p className="text-sm w-full">
                     This is to certify that the goods described below were treated in accordance with the fumigation
@@ -342,14 +339,14 @@ const FormLayout = () => {
                       <div className='flex justify-between'>
                           <p className=''><b>CHENNAI & {formattedDate}    <br/><b>TAMILNADU</b></b>
                           <div className='ml-[10%] '>
-                              <img src={ippc} width="120" className='mt-[40%]'></img>
+                              <img src={ippc} alt="" width="120" className='mt-[40%]'></img>
                               <p className='text-2xs w-[100%]'>FUMIGATED AS PER ISPM 13 STANDARDS"</p>
                           </div>
                           </p>
                           
                           <div className='text-left'>
                             {!hideSignature && <div>
-                              <img src={signature} width="100" className='ml-[30%]'></img>
+                              <img src={signature} alt="" width="100" className='ml-[30%]'></img>
                               <p className='text-1xs text-center'>Signature</p>
                             </div>}
                               <strong>Mr. S. Ajithkumar</strong><br/>
@@ -400,7 +397,7 @@ const FormLayout = () => {
         >
           <div ref={previewRef} className="font-bold">
             <div>
-              <img src={header} className="w-[100%]"></img>
+              <img src={header} alt="" className="w-[100%]"></img>
             </div>
             <h1 className="text-xl text-center">FUMIGATION CERTIFICATE</h1>
             <div className="flex justify-end items-center mr-[6%]">
@@ -410,9 +407,9 @@ const FormLayout = () => {
               <tbody>
                 <tr className="grid justify-items-start ml-3">
                   <td className="p-2 text-left">
-                    <p className="font-bold text-1xs">Dte PPQS Registration No. 303/MB DT: 17-03-2009</p>
+                    <p className="font-bold text-1xs">Dte PPQS Registration No. 1033/MB DT: 05-07-2024</p>
                     <p className="text-1xs">
-                      Treatment Certificate No. <b className="text-lg">JUNNEX{formData.tnfnumber}/{formData.year}</b>
+                      Treatment Certificate No. <b className="text-lg">TF{formData.tnfnumber}</b>
                     </p>
                     <p className="text-1xs w-full">
                       This is to certify that the goods described below were treated in accordance with the fumigation
@@ -430,7 +427,7 @@ const FormLayout = () => {
                 </tr>
                 <tr className="m-6">
                   <td className="p-2 text-left">
-                  <table className="p-2 text-left text-1xs leading-8 flex flex-row space-x-8">
+                  <table className="p-2 text-left text-xs leading-8 flex flex-row space-x-8">
                   <div className=''>
                     <tr>
                       <td>Name of fumigant:</td>
@@ -478,10 +475,10 @@ const FormLayout = () => {
                   </td>
                 </tr>
                 <tr className="border-t-2 border-black w-full">
-                <table className="p-2 text-left text-1xs leading-8">
+                <table className="p-2 text-left text-xs leading-8 ml-4">
                   <tr>
                     <td>Name of Exporter:</td>
-                    <td className='text-left'><b>{formData.exporterName}</b></td>
+                    <td className='text-left m-2'><b>{formData.exporterName}</b></td>
                   </tr>
 
                   <tr>
@@ -545,14 +542,14 @@ const FormLayout = () => {
                       <div className='flex justify-between'>
                           <p className=''><b>CHENNAI & {formattedDate}    <br/><b>TAMILNADU</b></b>
                           <div className='ml-[10%] '>
-                              <img src={ippc} width="120" className='mt-[40%]'></img>
+                              <img src={ippc} alt="" width="120" className='mt-[40%]'></img>
                               <p className='text-3xs w-[100%]'>FUMIGATED AS PER ISPM 13 STANDARDS"</p>
                           </div>
                           </p>
                           
                           <div className='text-left text-1xs'>
                           {!hideSignature && <div>
-                              <img src={signature} width="100" className='ml-[30%]'></img>
+                              <img src={signature} alt="" width="100" className='ml-[30%]'></img>
                               <p className='text-1xs text-center'>Signature</p>
                             </div>}
                               <strong>Mr. S. Ajithkumar</strong><br/>

@@ -1,0 +1,129 @@
+*
+{
+    font-family: "League Spartan", sans-serif;
+}
+.Header
+{
+    font-size:xx-large;
+}
+
+.greeting_style
+{
+    font-size:x-large;
+    text-align: center;
+}
+
+.card
+{
+    text-align: left;
+}
+.card label
+{
+    vertical-align: bottom;
+    font-size: small;
+}
+
+.invoice {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background-color: #fff;
+  }
+  
+  .invoice-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .invoice-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .from, .to {
+    width: 48%;
+    border-collapse: collapse;
+  }
+  
+  .from td, .to td {
+    padding: 10px;
+    border: 1px solid #000;
+  }
+  
+  .invoice-info {
+    margin-bottom: 20px;
+  }
+  
+  .invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .invoice-table th, .invoice-table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .invoice-footer {
+    margin-top: 20px;
+  }
+  
+  .invoice-detail-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .invoice-detail-table td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  .detail-label {
+    font-weight: bold;
+  }
+  
+  .detail-value {
+    text-align: left;
+  }
+  
+  .terms-of-delivery {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  .bank_details
+  {
+      text-align: right;
+      margin-left: 40%;
+  }
+
+  .Add_dec
+  {
+    margin-top: 15%;
+  }
+
+  .fixed-table {
+    table-layout: fixed;
+    width: 100%;
+    height: 200px;
+}
+
+.fixed-table td, .fixed-table th {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.entire-table
+{
+  width: 100%;
+  height: 100px;
+}
+
+.classToIgnore
+{
+  color: #fff;
+}
